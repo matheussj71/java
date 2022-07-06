@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: grid;
+    height: 100vh;
+        grid-template-columns: 1.1fr 1.1fr 1.1fr 1.1fr;
+        grid-template-rows: 0.5fr 2fr 1.2fr 0.3fr;
+        grid-template-areas: "nav nav nav nav"
+                             "main main main main"
+                             "conteudo1 conteudo2 conteudo3 conteudo4"
+                             "footer footer footer footer";
+    grid-gap: 0.5em;
+    
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    grid-area: nav;
+    border-radius: 0.8em;
+
+}
+#nav img{
+    margin-left: 60px;
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+}
+#nav a{
+    text-decoration: none;
+    font-size 22px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 15px;
+    color: white;
+    text-align: center;   
+}
+.matheus{
+	display: flex;
+	align-items: center;
+	margin: auto;
+	width: 100%;
+	height: 100%
+}
+#menu a:hover{
+    background-color: red;
+    color:white;
+}
+#main{
+    background-color: white;
+    grid-area: main;
+    border-radius: 0.8em;
+    display: flex;
+}
+
+
+#conteudo1{
+    background-color:;
+    grid-area: conteudo1;
+    border-radius: 0.8em;
+    align-items: center;
+}
+#conteudo2{
+    background-color:;
+    grid-area: conteudo2;
+    border-radius:;
+}
+#conteudo3{
+    background-color:;
+    grid-area: conteudo3;
+    border-radius: 0.8em;
+}
+#conteudo4{
+    background-color:;
+    grid-area: conteudo4;
+    border-radius: 0.8em;
+}
+#footer{
+    background-color: white;
+    grid-area: footer;
+    border-radius: 0.8em;
+}
+
+a:hover{
+    color: aliceblue;
+}
+
+body{
+     width: 100vw;
+    height: 100vh;
+    background-image: url(fundopretoo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
